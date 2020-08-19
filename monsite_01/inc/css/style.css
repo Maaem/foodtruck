@@ -1,0 +1,535 @@
+@charset "utf-8";
+
+body{
+    background-color: #E86EA550;
+    background-image: url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0116/1921/rrrpois_blanc_fond_rose_pale_S_shop_preview.png);
+
+}
+
+/*----Mise en forme des titres----*/
+
+h2{
+    position:relative;
+    text-decoration: underline;
+    background-color: #A86EA550;
+    color: #444444;
+    font-size: 24px;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    animation-name: titre;
+    animation-duration: 5s;
+
+}
+
+h1{
+position: relative;
+font-family: sans-serif;
+color: #A95282;
+font-size: 2.8em;
+text-shadow: 1px 1px 2px grey;
+display: inline-block;
+vertical-align: top;
+width: 85%;
+padding-top: 1%;
+padding-left: 1%;
+animation-name: titre;
+animation-duration: 5s;
+
+
+}
+
+h3, h4, h5 {
+    position: relative;
+    text-decoration: underline;
+    background-color: #A86EA550;
+    color: #444444;
+    font-size: 24px;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    animation-name: titre;
+    animation-duration: 5s;
+
+
+
+}
+
+/*----Mise en forùe du menu principal----*/
+
+/*----Ex menu horizontal----*/
+
+#principal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A95282;
+    border-radius: 5px;
+    border-radius: 20px; 
+
+
+}
+
+#principal li {
+    float: left;
+    border: 1px solid #ffffff;
+
+}
+
+#principal li a:last-child {
+    border: none;
+
+}
+
+#principal a {
+    display: block;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+
+}
+
+#principal li a:hover {
+    background-color: bisque;
+    color: #A95282;
+
+}
+
+/*----Ex de menu vertical
+#principal {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 15%;
+    background-color: #E86EA550;
+    border-style: solid;
+    border-color: #A95282;
+    border-width: 2px 2px 0 2px;
+}
+
+#principal a{
+    display: block;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+#principal li{
+    text-align: center;
+    border-bottom: 2px solid #A95282;
+}
+
+#principal li a:hover{
+    background-color: #A95282;
+    color: white;
+}
+
+#principal li a:active{
+    background-color: bisque;
+    color: #A95282;
+}
+
+nav{
+    margin-top: 2%;
+}----*/
+
+/*----Mise en forme des paragraphes----*/
+p {
+    color:#444444;
+    text-align: justify;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 10px 2%;
+    display: inline-block;
+}
+
+#P1{
+    width: 25%;
+    vertical-align: top;
+}
+
+#P2 {
+    width: 25%;
+
+}
+
+.concept {
+    text-align: center;
+}
+
+
+/*----Mise en forme section foodtruck----*/
+
+.truck1{
+    width: 30%;
+    vertical-align: top;
+    padding: 3%;
+
+}
+
+.truck2{
+    position: relative;
+    width: 35%;
+
+}
+
+audio{
+    position: relative;
+    width: 15%;
+    left: 30px;
+    margin: 10px 2%;
+    border-radius: 20px; 
+    box-shadow: 4px 4px 4px black;
+}
+
+
+video {
+    border: 5px solid #A95282;
+    width: 30%;
+    height: 30%;
+    
+}
+
+table{
+    margin: 20px;
+
+}
+
+/*----Test propriété transition----*/
+
+#morph {
+background-color: #A95282;
+width: 300px;
+height: 300px;
+color: #ffffff;
+-o-transition: 3s; background-color: 3s; width: 3s;
+-moz-transition: 3s; background-color: 3s; width: 3s;
+-webkit-transition: 3s; background-color: 3s; width: 3s;
+transition: 3s; background-color: 3s; width: 3s;
+
+}
+
+#morph p {
+    color: #ffffff;
+
+}
+
+#morph:hover {
+    background-color:#A86EA550;
+    width: 75%;
+}
+
+/*----Test animation simple----*/
+
+#anim {
+    width: 100px;
+    height: 100px;
+    background-color: darkorchid;
+    -o-animation-name: cube;
+    -o-animation-duration: 5s;
+    -moz-animation-name: cube;
+    -moz-animation-duration: 5s;
+    -webkit-animation-name: cube;
+    -webkit-animation-duration: 5s;
+    animation-name: cube;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+/*----Synthaxe de base----*/
+@keyframes cube {
+    from {background-color: darkorchid;width: 100px;}
+    to {background-color: deeppink;width: 100%;}
+
+}
+
+/*----Synthaxe de pour opéra  ----*/
+@-o-keyframes cube {
+    from {background-color: darkorchid;width: 100px;}
+    to {background-color: deeppink;width: 100%;}
+
+}
+
+/*----Synthaxe de pour mozilla firefox----*/
+@-moz-keyframes cube {
+    from {background-color: darkorchid;width: 100px;}
+    to {background-color: deeppink;width: 100%;}
+
+}
+
+/*----Synthaxe de pour le reste (Chrome, Safari etc) ----*/
+@-webkit-keyframes cube {
+    from {background-color: darkorchid;width: 100px;}
+    to {background-color: deeppink;width: 100%;}
+
+}
+
+/*----Test animation complète----*/
+#anim2 {
+    width: 150px;
+    height: 150px;
+    background-color: forestgreen;
+    position: relative;
+    animation-name: cube2;
+    animation-duration: 7s;
+    -o-animation-name: cube2;
+    -o-animation-duration: 7s;
+    -moz-animation-name: cube2;
+    -moz-animation-duration: 7s;
+    -webkit-animation-name: cube2;
+    -webkit-animation-duration: 7s;
+}
+
+@keyframes cube2 {
+    0% {left: 0; top: 0;}
+    25%{left: 300px; top: 0;border-radius: 0;}
+    50%{left: 300px; top: 300px;border-radius: 100%;}
+    75%{left: 0px; top: 300px;}
+    100% {left: 0; top: 0;}
+
+}
+
+/*----Animation du logo et du titre----*/
+
+#logo {
+    position: relative;
+    animation-name: moovelogo;
+    animation-duration: 5s;
+}
+
+@keyframes moovelogo {
+    from {left:-200px;}
+    to { left: 0;}
+}
+
+@keyframes titre {
+    from { top: -150px;}
+    to {top: 0;}
+}
+
+/*----Test propriété transi----
+
+#positions {
+    margin: 5Opx 0px 50px 0px;
+    background-color: aquamarine;
+}
+
+#para1 {
+    position: relative;
+    left: 300px;
+}*/
+
+
+/*----menu footer----*/
+
+#menufooter {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:#A95282;
+    color: #ffffff;
+    border-radius: 5px;
+    border-radius: 20px; 
+}
+
+#menufooter li {
+    display: inline;
+    list-style: none;
+}
+
+#menufooter li a:hover {
+    background:#A86EA550 url("monsite/inc/img/fond.png") no-repeat;
+    color: #ffffff;
+}
+
+
+#menufooter a {
+    display: inline-block;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+
+}
+
+/*-----Mise en forme des tableaux-----*/
+table,
+table th,
+table td {
+    border-collapse: collapse; /*enlever la double bourdure*/
+    border: 1px solid #A95282;
+    font-family: sans-serif;
+    padding: 8px 10px;
+}
+
+table th {
+    background-color: #A95282;
+    color: #ffffff;
+
+}
+/*-----test Flexbox-----*/
+#conteneur {
+    margin-top: 50px;
+    border:1px solid black;
+    display: flex;
+    flex-wrap: wrap-reverse; 
+}
+
+.element {
+    height: 100px;
+    width: 1000px;
+    background-color: cadetblue;
+    border: 1px solid;
+
+}
+
+/*-----Formulaire-----*/
+
+p {
+    margin-top: 0px;
+}
+
+form {
+    width: 40%;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color:#A95282;
+    border-radius: 20px; 
+
+}
+
+legend {
+    font-size: 20px;
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: sans-serif;
+}
+
+label {
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+    color: #f00;
+}
+
+input:focus {
+    background: #eaeaea;
+}
+
+input,
+textarea {
+    width: 249px;
+}
+
+textarea {
+    height: 100px;
+}
+
+select {
+    width: 254px;
+}
+
+input[type=checkbox] {
+    width: 10px;
+}
+
+input[type=submit] {
+    width: 250px;
+    padding: 10px;
+}
+
+#comments:valid {
+    border: 2px solid green;
+}
+
+#comments:invalid {
+    border: 2px solid red;
+}
+
+
+/*-----RESPONSIVE-----*/
+
+/*-----ECRAN MOBILE-----*/
+@media screen and (max-width:439px) {
+
+    header {
+        text-align: center;
+    }
+
+    h1 {
+        width: 70%;
+        margin-top: -1%;
+        /*faire disparaitre l'animation : animation-name:test*/
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    video {
+        width: 95%;
+    }
+
+    #principal {
+        border-radius: 10px;
+    }
+
+    #principal li {
+        display: block;
+        float: none;
+        border-right: 0;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    #principal a {
+        display: block;
+        color: #ffffff;
+        font-family: sans-serif;
+        text-decoration: none;
+        text-align: center;
+        padding: 8px 16px;
+    
+    }
+    
+    #principal li a:hover {
+        background-color: bisque;
+        color: #A95282;
+    }
+
+    #P1, #P2 {
+        width: 95%;
+    }
+    
+
+    .truck1 {
+        width: 95%;
+    }
+
+    .truck2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    audio {
+        width: 65%;
+        margin: 10px 0;
+    }
+
+}
+
